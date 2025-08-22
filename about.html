@@ -4,29 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Furina</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #1b2b4a, #3e5c9a);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 15px;
+      margin-top: 1rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      animation: fadeIn 2s;
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      background: #3e5c9a;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    a.back:hover { background: #5a7fe0; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95);}
+      to { opacity: 1; transform: scale(1);}
+    }
+  </style>
 </head>
 <body>
-  <header>💧 About Furina</header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-  </nav>
-
-  <main>
-    <h2>Who is Furina?</h2>
-    <p>
-      Furina, also known as the Hydro Archon of Fontaine, is admired not only for her grace but also her 
-      dramatic presence and theatrical flair. She is a character full of elegance, wit, and mystery. 
-    </p>
-    <p>
-      Her vibrant personality and dedication to Fontaine’s justice system have made her a beloved figure 
-      among the people. Despite her playful demeanor, she carries great responsibility as one of the Archons.
-    </p>
-    <img src="Image2.jpeg" alt="Furina About" style="max-width: 400px; border-radius: 15px; margin-top:20px;">
-  </main>
-
-  <footer>© 2025 Furina Fan Project | About Page</footer>
+  <h1>About Furina</h1>
+  <p>Furina, also known as Focalors, is the Hydro Archon of Fontaine. She is adored for her elegance, dramatic presence, and captivating performances in the opera-like trials of Fontaine.</p>
+  <img src="Image2.jpeg" alt="Furina About">
+  <br>
+  <a class="back" href="index.html">⬅ Back</a>
 </body>
 </html>
