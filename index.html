@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Furina Fan Page</title>
+  <title>Furina Gallery</title>
   <style>
     body {
       margin: 0;
@@ -11,7 +11,6 @@
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: white;
       text-align: center;
-      overflow-x: hidden;
     }
 
     header {
@@ -28,40 +27,33 @@
       to { text-shadow: 0 0 25px #81d4fa, 0 0 5px #4fc3f7; }
     }
 
-    .furina-img {
-      margin-top: 30px;
-      width: 70%;
-      max-width: 500px;
-      border-radius: 20px;
-      box-shadow: 0 0 30px #4fc3f7;
-      animation: float 4s ease-in-out infinite;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #4fc3f7;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #81d4fa;
     }
 
     @keyframes float {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 25px;
-      background: #4fc3f7;
-      color: black;
-      font-size: 18px;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #81d4fa;
-      transform: scale(1.1);
-      box-shadow: 0 0 20px #4fc3f7;
+      50% { transform: translateY(-10px); }
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 30px;
       padding: 20px;
       background: rgba(0,0,50,0.6);
       font-size: 14px;
@@ -69,18 +61,21 @@
   </style>
 </head>
 <body>
-  <header>✨ Furina - Hydro Archon ✨</header>
+  <header>💧 Furina - Hydro Archon Gallery 💧</header>
 
   <main>
-    <h2>The Elegance of Fontaine</h2>
-    <img src="Image1.jpg" alt="Furina" class="furina-img">
-    <p>Welcome to the Furina fan page! Here we celebrate the beauty, charisma, and drama of Fontaine's Hydro Archon 💧</p>
-
-    <a href="#" class="btn">Learn More</a>
+    <h2>Elegance of Fontaine in 5 Pictures</h2>
+    <div class="gallery">
+      <img src="Image1.jpg" alt="Furina 1">
+      <img src="Image2.jpeg" alt="Furina 2">
+      <img src="Image3.jpeg" alt="Furina 3">
+      <img src="Image4.jpeg" alt="Furina 4">
+      <img src="Image5.jpeg" alt="Furina 5">
+    </div>
   </main>
 
   <footer>
-    © 2025 Furina Fan Project | Powered by Genshin Passion
+    © 2025 Furina Fan Project | Powered by Hydro Magic
   </footer>
 </body>
 </html>
