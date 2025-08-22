@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furina Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #1b2b4a, #3e5c9a);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 { font-family: 'Playfair Display', serif; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+      transition: transform 0.4s;
+    }
+    .gallery img:hover {
+      transform: scale(1.08);
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      background: #3e5c9a;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    a.back:hover { background: #5a7fe0; }
+  </style>
+</head>
+<body>
+  <h1>Furina Gallery</h1>
+  <div class="gallery">
+    <img src="Image4.jpeg" alt="Furina Gallery 1">
+    <img src="Image5.jpeg" alt="Furina Gallery 2">
+  </div>
+  <a class="back" href="index.html">⬅ Back</a>
+</body>
+</html>
