@@ -3,63 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Furina - Hydro Archon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Furina Fan Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(0, 0, 50, 0.7);
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #4fc3f7; }
+      to { text-shadow: 0 0 25px #81d4fa, 0 0 5px #4fc3f7; }
+    }
+
+    .furina-img {
+      margin-top: 30px;
+      width: 70%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #4fc3f7;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #4fc3f7;
+      color: black;
+      font-size: 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #81d4fa;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #4fc3f7;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(0,0,50,0.6);
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+  <header>✨ Furina - Hydro Archon ✨</header>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">Furina</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#abilities">Abilities</a></li>
-  </ul>
-</nav>
+  <main>
+    <h2>The Elegance of Fontaine</h2>
+    <img src="Image1.jpg" alt="Furina" class="furina-img">
+    <p>Welcome to the Furina fan page! Here we celebrate the beauty, charisma, and drama of Fontaine's Hydro Archon 💧</p>
 
-<!-- Hero Section -->
-<header class="hero">
-  <div class="hero-content fade-in">
-    <h1>Furina - Hydro Archon</h1>
-    <p>The noble Hydro Archon of Fontaine, elegant and mysterious.</p>
-    <a href="#about" class="btn">Discover Her Story</a>
-    <img src="Image1.jpg" alt="Furina Character" class="hero-img">
-  </div>
-</header>
+    <a href="#" class="btn">Learn More</a>
+  </main>
 
-<!-- About Section -->
-<section class="about section" id="about">
-  <h2>About Furina</h2>
-  <p>Furina is the Hydro Archon of Fontaine, known for her grace, intelligence, and influence over the kingdom’s affairs.</p>
-  <p>Her presence inspires awe and respect, combining elegance and mystery in every action.</p>
-  <img src="Image2.jpeg" alt="Furina Pose" class="about-img">
-</section>
-
-<!-- Abilities Section -->
-<section class="abilities section" id="abilities">
-  <h2>Abilities</h2>
-  <div class="ability-cards">
-    <div class="card">
-      <img src="https://drive.google.com/uc?export=view&id=1eDRTnMRsdUdiCGTEhz8PT2wCcZ0XLmA0" alt="Hydro Control">
-      <h3>Hydro Control</h3>
-      <p>Manipulates Hydro energy to summon powerful waves and water attacks.</p>
-    </div>
-    <div class="card">
-      <img src="https://drive.google.com/uc?export=view&id=1eDRTnMRsdUdiCGTEhz8PT2wCcZ0XLmA0" alt="Noble Influence">
-      <h3>Noble Influence</h3>
-      <p>Maintains justice and order across Fontaine with her authority and wisdom.</p>
-    </div>
-    <div class="card">
-      <img src="https://drive.google.com/uc?export=view&id=1eDRTnMRsdUdiCGTEhz8PT2wCcZ0XLmA0" alt="Mysterious Aura">
-      <h3>Mysterious Aura</h3>
-      <p>Her enigmatic presence captivates both allies and adversaries alike.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Particle Background -->
-<canvas id="particles"></canvas>
-<script src="script.js"></script>
+  <footer>
+    © 2025 Furina Fan Project | Powered by Genshin Passion
+  </footer>
 </body>
 </html>
